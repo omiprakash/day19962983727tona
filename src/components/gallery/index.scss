@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+.imageGallery {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 30px;
+      border-bottom: solid 2px #adadad;
+      span {
+          display: inline-block;
+          border-bottom: solid 3px #333333;
+          padding-bottom: 15px;
+      }
+  }
+  .imagesSlider {
+      box-shadow: 0 0px 8px 0 rgba(0,0,0,.2);
+      position: relative;
+      margin: 50px 0px;
+      overflow: hidden;
+      .btnBuutton {
+          padding: 5px 10px;
+          position: absolute;
+          font-weight: bold;
+          top: 50%;
+          margin-top: -20px;
+          left: 0px;
+          span {
+              display: block;
+              padding: 4px 8px 8px;
+              background: #333333;
+              color: #ffffff;
+              cursor: pointer;
+          }
+          &.buttonRight {
+              right: 0px;
+              left: auto;
+          }
+      }
+      .imgSlider {
+          padding: 40px;
+          overflow: hidden;
+          display: flex;
+          transition: all 1s;
+          width: 1800px;
+          .imgItem {
+              width: 25%;
+              min-width: 223px;
+              margin: 0px 30px;
+              background: #721618;
+              transition: all 1s;
+              min-height: 200px;
+              text-align: center;
+              color: #ffffff;
+              img {
+                  max-width: 100%;
+              }
+          }
+      }
+  }
+  .detailsBox {
+      border: solid 2px #adadad;
+      margin: 50px 0px;
+      padding: 40px;
+      .imgDetails {
+          display: flex;
+          .img {
+              flex: 0 0 300px;
+              background: #721618;
+              height: 400px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          .imgDetailBox {
+            width: 400px;
+          }
+          .imgText {
+              padding-left: 50px;
+              h4 {
+                  margin: 0px;
+                  padding: 0px;
+                  font-size: 30px;
+              }
+              .text {
+                  margin-top: 40px;
+                  line-height: 25px;
+                  color: #666666;
+                  span {
+                      font-weight: bold;
+                      color: #333333;
+                  }
+              }
+          }
+      }
+  }
+  .numberBox {
+      margin: 50px 0px 0px;
+      span {
+          font-size: 18px;
+          font-weight: bold;
+      }
+      ul {
+          margin: 0px 0px 0px 15px;
+          padding: 0px;
+          list-style-type: decimal;
+          li {
+              color: #666666;
+              line-height: 30px;
+          }
+      }
+      .buttonbox {
+          text-align: center;
+          margin-top: 50px;
+          button {
+              border-radius: 30px;
+              padding: 10px;
+              min-width: 200px;
+              background: #fb8180;
+              color: #ffffff;
+              border: none;
+              font-size: 20px;
+              cursor: pointer;
+          }
+      }
+  }
+  .numberScan {
+      border: solid 2px #adadad;
+      text-align: center;
+      margin: 50px 0px;
+      padding: 30px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #999999;
+  }
+}
